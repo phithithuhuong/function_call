@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo_and_function_call</title>
+</head>
+<body>
+<script>
+   function processConirm(answer){//tạo hàm và truyền tham số
+       let result = "";// khai báo biến để trả kết quả
+       if (answer){//nhấn OK hiện kqua này
+           result = 'Xuất sắc.Chúng tôi sẽ chơi 1 trò chơi cờ vua đẹp '
+       } else {//nhấn CANCEL hiện kqua dưới
+           result = 'có lẽ sau đó'
+       }
+       return result;
+   }// confirm: hiển thị thông báo trong hộp thoại (kèm chữ OK/CANCEL)
+   let confirmAnswer = confirm('chúng ta sẽ chơi 1 trò chơi?')
+   let theAnsewer = processConirm(confirmAnswer)//Cho hàm liên kết với thông báo trên hộp thoại
+   alert(theAnsewer);//kết quả trả về
+
+</script>
+
+</body>
+</html>
