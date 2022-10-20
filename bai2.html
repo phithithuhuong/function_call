@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoinhietdoFUNCTION</title>
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<!--Chuyển đổi nhiệt độ F sang C -->
+<div>
+    <h3>Type a value in the Fahrenheit field to convert the value to Celcius:</h3>
+</div>
+<!---->
+<p>Fahrenheit
+    <input type="number" name="" id="inputF" placeholder="Fahrenheit"
+    oninput="thaydoi()" onchange="thaydoi()">
+</p>
+<p id="resuil"></p>
+<script>
+    function thaydoi(){
+        let F = document.getElementById("inputF").value;
+        let C = ((F - 32)/1.8);
+        document.getElementById("resuil").innerHTML = "Celcius:" + C
+    }
+
+</script>
+
+
+
+</body>
+</html>
