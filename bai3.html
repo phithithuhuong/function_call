@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MD1_bai14_TimMinTrongArray</title>
+</head>
+<body>
+<script>
+    let n = prompt('Nhập độ dài của mảng :')
+    let arr =[]//tạo mảng rỗng để hiển thị phần tử trong ô
+    for (let i = 0 ;i < n;i++){
+        let itm = prompt("Nhập phần tử:")
+        arr.push(itm)
+    }
+  function min() {
+      let arrmin = arr[0]
+      for (let i = 0; i < arr.length; i++) {
+          if (arrmin > arr[i]) {
+              arrmin = arr[i]
+          }
+
+      }
+      return arrmin
+  }
+    alert( "Min của array là : "+min())
+</script>
+
+
+</body>
+</html>
